@@ -1,0 +1,21 @@
+<?php
+$conn = open();
+$sql = 'SELECT name, email, phoneNumber, gender, comment, emergencyContanct FROM formtable';
+$result = $conn->query($sql);
+
+if ($result -> num_rows > 0)
+{
+    //output data of each row
+    while($row = $result->fetch_assoc())
+    {
+        echo "<br />Name: ".$row["name"]."<br />Email: ".$row["email"]."<br />Phone Number: ".$row["phoneNumber"]."<br />Gender: ".$row["gender"]."<br />Comment: ".$row["comment"]."<br />Emergency Contact: ".$row["emergencyContanct"]."<br />";
+    }
+}
+else {
+    echo "0 results <br />";
+}
+
+echo "<br />Data Retrival Successful \n";
+
+Close($conn);
+?>

@@ -1,0 +1,32 @@
+@charset "utf-8";
+/* CSS Document */
+
+* { background-color: #2AABE4;}
+body {
+    font-size: 24px;
+    background-color: #2AABE4;
+    font-family: 'Times New Roman', Times, serif;}
+h2, h3 {
+	color: #666B6E;}
+p, li {
+    color: white;}
+a {
+    color: azure;}
+a:visited {
+    color: blueviolet;}
+a:hover {
+    cursor: pointer;
+    color: yellow;}
+.text {
+    color: azure;
+    border: 3px solid red;
+    background-color: black;
+    padding: inherit;}
+p b{
+    color: black;}
+h1 {
+    background-color:black;}
+th {
+    background-color: black;}
+table {
+    background-color: black;}
