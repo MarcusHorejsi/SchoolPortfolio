@@ -102,3 +102,7 @@ footer p {
 th, td {
     text-align: center;
 }
+
+table {
+    empty-cells: show;
+}
